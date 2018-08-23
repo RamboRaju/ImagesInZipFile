@@ -1,0 +1,13 @@
+<apex:page Controller="repeatCon" renderAs="PDF">
+
+<body style="font-size:10pt; font-family:sans-serif">
+
+        <table>
+            <td style="font-family:'Segoe UI', Tahoma, sans-serif;">
+                <apex:repeat value="{!imageList}" var="img1">
+                    <td><apex:image url="{!URLFOR($Resource.MyData1,img1)}"/><br/></td><br/>
+                </apex:repeat>
+            </td>
+        </table>
+    </body>
+</apex:page>
